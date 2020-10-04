@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@font-face {
+	font-family: 'Futura PT Book';
+	src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+		 url('../fonts/FuturaPT-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+		 url('../fonts/Gilroy-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+		 url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		 url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+		 url('../fonts/Gilroy-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+/*===========================================Fonts===========================================*/
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a, a:visited{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: inherit;
+	font-style: inherit;
+}
+img{
+	vertical-align: top;
+}
+html, body{
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+/*===========================================================================================*/
+	font-family: Poppins;
+}
+/*===========================================================================================*/
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
+/*=========================================Nullstyle=========================================*/
+.container{
+	max-width: 1115px;
+	margin: 0 auto;
+}
+/*===========================================================================================*/
+.wrapper__bg{
+	background: #fcfcfc url("../img/bg/Group.png") right 0 no-repeat;
+	min-height: 620px;
+}
+/*===========================================================================================*/
+.header {
+	margin-bottom: 100px;
+}
+.header__logo, .header__menu, .header__button{
+	display: inline-block;
+}
+.header__logo img{
+	margin-top: -15px;
+}
+.header__menu li{
+	display: inline-block;
+	padding: 10px;
+	margin: 30px 10px;
+	font-family: 'Futura PT Book';
+	font-size: 16px;
+	color: #00293F;
+}
+.header__menu li:first-child{
+	margin-left: 100px;
+}
+.header__menu li:last-child{
+	margin-right: 90px;
+}
+.buttongreen a{
+	padding: 15px 30px;
+	font-family: Gilroy;
+	font-size: 16px;
+	color: #ffffff;
+	background: linear-gradient(360deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 51.04%), #70C851;
+	border-radius: 3px;
+}
+.buttongreen span {
+	display: inline-block;
+	background: url("../img/icons/Arrow.png") right no-repeat;
+	padding: 0 30px 0 0;
+}
+/*===========================================================================================*/
+.header__menu a:hover{
+	text-decoration: underline;
+	color: saddlebrown;
+}
+*:focus{
+	outline: 2px solid #13440146;
+}
+/*===========================================================================================*/
+.start {
+	color: #182C51;
+	margin-bottom: 200px;
+}
+.start__text p:first-child{
+	font-size: 40px;
+	line-height: 60px;
+}
+.start__text p:last-child{
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 60px;
+	margin-bottom: 70px;
+}
+/*===========================================================================================*/
+.buttongreen a:hover{
+	background-color: blueviolet;
+	color: yellow;
+}
+.buttongreen a:active{
+	padding: 13px 28px;
+}
+/*===========================================================================================*/
+.startinfo{
+	background-color: #F8F8F8;
+}
+.startinfo__text{
+	display: inline-block;
+	max-width: 730px;
+}
+.startinfo__text *:first-child{
+	padding: 40px 0 20px 0;
+}
+.startinfo__text *:last-child{
+	padding: 0 0 40px 0;
+}
+.startinfo__text h2{
+	font-size: 28px;
+	font-weight: 600;
+	color: #00293F;
+	line-height: 42px;
+}
+.startinfo__text p{
+	font-size: 16px;
+	color: #5A5A5A;
+	line-height: 24px;
+}
+.startinfo__list {
+	display: inline-block;
+	font-family: Gilroy;
+}
+.startinfo__list li{
+	margin: 0 30px 40px 150px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #182C51;
+}
+.startinfo__list li::before{
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background-color: #70C851;
+	margin: 0 10px 0 0;
+}
+/*===========================================================================================*/
+.startinfo__list a:hover{
+	color: saddlebrown;
+}
+.startinfo__list li:hover::before{
+	background-color: slateblue;
+}
+/*===========================================================================================*/
+
+/*===========================================BLOG============================================*/
+.blog {
+	background-color: #fcfcfc;
+	margin-bottom: 150px;
+}
+.blog h2{
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 60px;
+	margin: 0 0 40px 0;
+	color: #182C51;
+}
+.blog__image {
+	float: left;
+}
+.blog__info {
+	display: inline-block;
+	max-width: 437px;
+	padding: 0 0 0 30px;
+}
+.blog__text h4, h3{
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.blog__text *:first-child{
+	margin-top: 15px;
+	text-transform: uppercase;
+	color: #5A5A5A;
+	line-height: 21px;
+}
+.blog__text *:nth-child(2){
+	color: #00293F;
+	font-size: 28px;
+	line-height: 42px;
+}
+.blog__text *:last-child{
+	font-size: 16px;
+	line-height: 24px;
+	color: #5A5A5A;
+	margin-bottom: 20px;
+}
+.blog__list li {
+	display: inline-block;
+	font-size: 13px;
+	margin-right: 20px;
+}
+.blog__list li:nth-child(1)::before{
+	content: url("../img/blog/IconBlog1.png");
+	margin-right: 10px;
+}
+.blog__list li:nth-child(2)::before{
+	content: url("../img/blog/IconBlog2.png");
+	margin-right: 10px;
+}
+.blog__list li:nth-child(3)::before{
+	content: url("../img/blog/IconBlog3.png");
+	margin-right: 10px;
+}
+/*===========================================================================================*/
+.blog__info a:hover{
+	text-decoration: underline;
+	color: darkorange;
+}
+/*===========================================================================================*/
+
+/*=========================================CONTACTS=========================================*/
+.contacts {
+	background: #F8F8F8;
+	margin-bottom: 100px;
+}
+.contacts__info {
+	background: url("../img/contacts/image.png") right bottom no-repeat;
+	min-height: 500px;
+}
+.contacts__text{
+	max-width: 587px;
+}
+.contacts__text h2{
+	padding: 30px 0;
+	font-weight: 600;
+	font-size: 28px;
+	color: #00293F;
+	line-height: 42px;
+}
+.contacts__text p{
+	font-size: 16px;
+	color: #5A5A5A;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+.contacts__list li{
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 500px;
+	margin-bottom: 55px;
+}
+.contacts__list li:first-child{
+	margin-bottom: 25px;
+}
+.contacts__list a{
+	display: inline-block;
+	max-width: 255px;
+	color: #000;
+}
+.contacts__list a:nth-child(2){
+	line-height: 50px;
+}
+.contacts__list li:first-child::before{
+	content: "";
+	background: url("../img/contacts/location.png") center 5px no-repeat;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 15px;
+}
+.contacts__list li:nth-child(2)::before{
+	content: "";
+	background: url("../img/contacts/call.png") 0 0 no-repeat;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 15px;
+}
+.contacts__list li:last-child::before{
+	content: "";
+	background: url("../img/contacts/message.png") center 8px no-repeat;
+	width: 60px;
+	height: 50px;
+	float: left;
+	margin-right: 15px;
+}
+/*===========================================================================================*/
+.contacts a:hover{
+	color: blueviolet;
+	text-decoration: underline;
+}
+.contacts a:visited{
+	opacity: 0.3;
+}
+/*===========================================================================================*/
+
+/*===========================================OFDR============================================*/
+.ofdr {
+	font-family: Gilroy;
+	color: #333333;
+	line-height: 24px;
+}
+.container-ofdr {
+	max-width: 1146px;
+	margin: 0 auto;
+}
+.ofdr__priceinfo{
+	display: inline-block;
+	max-width: 705px;
+	padding: 60px 80px 60px 140px;
+}
+.ofdr__priceinfo h2{
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 51px;
+	margin-bottom: 20px;
+}
+.ofdr__priceinfo p{
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 26px;
+}
+.ofdr__image{
+	float: right;
+}
+.ofdr__image img{
+	padding: 25px 20px 0 0;
+}
+.ofdr__start {
+	background: url("../img/ofdr/bg.png") right / 100% 100% no-repeat;
+}
+
+.ofdr__info li, .ofdr__info p{
+	font-size: 18px;
+}
+.ofdr__text h2{
+	font-weight: 800;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.ofdr__text p{
+	margin-bottom: 25px;
+}
+.ofdr__list h3{
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.ofdr__list li{
+	padding: 0 0 10px 0;
+}
+.ofdr__list li::before{
+	content: "";
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #87B0EE;
+	display: inline-block;
+	margin: -5px 20px 0 40px;
+}
